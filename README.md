@@ -27,7 +27,16 @@ cd files
 python run.py
 ```
 
+<summary>Use API</summary>
+
+The API provided 4 options:
+1. Run inference on Custom Image
+2. Run inference on WebCam
+3. Run inference on all files in directory resources/test_images
+4. Register a new face (Is cropped to face automatically) and set its class to add    a new entity.
+
 </details>
+
 <details open>
 <summary>Run detect.py</summary>
 
