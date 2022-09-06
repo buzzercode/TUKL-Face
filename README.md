@@ -4,48 +4,24 @@
     Face Detection is one of the most common and yet most complex deep learning problem. This model is made via a pipeline of Yolov5 and SSD using FaceNet (in Keras). Yolov5 is used for Face Detection in an image, video or live feed and the detected face is cropped and then tested via SSD to check whether it exists in the provided database.
   </p>
 
-  <div align="center">
-    <a href="https://github.com/ultralytics" style="text-decoration:none;">
-      <img src="https://github.com/ultralytics/assets/raw/master/social/logo-social-github.png" width="2%" alt="" /></a>
-    <img src="https://github.com/ultralytics/assets/raw/master/social/logo-transparent.png" width="2%" alt="" />
-    <a href="https://www.linkedin.com/company/ultralytics" style="text-decoration:none;">
-      <img src="https://github.com/ultralytics/assets/raw/master/social/logo-social-linkedin.png" width="2%" alt="" /></a>
-    <img src="https://github.com/ultralytics/assets/raw/master/social/logo-transparent.png" width="2%" alt="" />
-    <a href="https://twitter.com/ultralytics" style="text-decoration:none;">
-      <img src="https://github.com/ultralytics/assets/raw/master/social/logo-social-twitter.png" width="2%" alt="" /></a>
-    <img src="https://github.com/ultralytics/assets/raw/master/social/logo-transparent.png" width="2%" alt="" />
-    <a href="https://www.producthunt.com/@glenn_jocher" style="text-decoration:none;">
-      <img src="https://github.com/ultralytics/assets/raw/master/social/logo-social-producthunt.png" width="2%" alt="" /></a>
-    <img src="https://github.com/ultralytics/assets/raw/master/social/logo-transparent.png" width="2%" alt="" />
-    <a href="https://youtube.com/ultralytics" style="text-decoration:none;">
-      <img src="https://github.com/ultralytics/assets/raw/master/social/logo-social-youtube.png" width="2%" alt="" /></a>
-    <img src="https://github.com/ultralytics/assets/raw/master/social/logo-transparent.png" width="2%" alt="" />
-    <a href="https://www.facebook.com/ultralytics" style="text-decoration:none;">
-      <img src="https://github.com/ultralytics/assets/raw/master/social/logo-social-facebook.png" width="2%" alt="" /></a>
-    <img src="https://github.com/ultralytics/assets/raw/master/social/logo-transparent.png" width="2%" alt="" />
-    <a href="https://www.instagram.com/ultralytics/" style="text-decoration:none;">
-      <img src="https://github.com/ultralytics/assets/raw/master/social/logo-social-instagram.png" width="2%" alt="" /></a>
-  </div>
-</div>
+## <div align="center">Yolov5 Base Code</div>
 
+This model is built upon a Yolov5 model that can be trained for a custom network. This model was paired wtih pre trained weight for Face detection in an image which was further optimized for the faces we required to work on. The original [Yolov5 repo](https://github.com/ultralytics/yolov5) can be used if any other network is to be built.
 
-## <div align="center">Documentation</div>
-
-See the [YOLOv5 Docs](https://docs.ultralytics.com) for full documentation on training, testing and deployment.
-
-## <div align="center">Quick Start Examples</div>
+## <div align="center">Quick Start</div>
 
 <details open>
 <summary>Install</summary>
 
-Clone repo and install [requirements.txt](https://github.com/ultralytics/yolov5/blob/master/requirements.txt) in a
-[**Python>=3.7.0**](https://www.python.org/) environment, including
-[**PyTorch>=1.7**](https://pytorch.org/get-started/locally/).
+Copy the required code in a directory. The [requirements.txt] file contains all the required packages in a [**Python>=3.7.0**](https://www.python.org/) environment, including [**PyTorch>=1.7**](https://pytorch.org/get-started/locally/). 
+
+In most case you'll be directly running the API, so no need to run the requirements.txt file.
+
+The best approach would be to create a conda enviornemnt and run the following command to automatically check the requirements and run the API.
 
 ```bash
-git clone https://github.com/ultralytics/yolov5  # clone
-cd yolov5
-pip install -r requirements.txt  # install
+cd files
+python run.py
 ```
 
 </details>
