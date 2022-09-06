@@ -1,0 +1,16 @@
+WEBCAM:
+
+python detect.py --weights resources/face_yolo5.pt --conf 0.25 --source 0 --model_json resources/keras-facenet-h5/model.json --model_h5 resources/keras-facenet-h5/model.h5 --ssd_images resources
+
+VIDEO:
+
+python detect.py --weights resources/face_yolo5.pt --conf 0.25 --source resources/test_images/vid.MOV --model_json resources/keras-facenet-h5/model.json --model_h5 resources/keras-facenet-h5/model.h5 --ssd_images resources
+
+IMAGES:
+
+python model_api.py --weights resources/face_yolo5.pt --conf 0.25 --source resources/test_images --model_json resources/keras-facenet-h5/model.json --model_h5 resources/keras-facenet-h5/model.h5 --ssd_images resources
+
+API:
+
+python run.py
+
